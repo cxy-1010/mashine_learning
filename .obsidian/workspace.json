@@ -8,29 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "91292b55843213bb",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "MachineLearning_Ng/机器学习个人笔记完整版v4.3.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "机器学习个人笔记完整版v4.3"
-            }
-          },
-          {
             "id": "f27a459dd94ff3e6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "mylearning_note/pytorch学习.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pytorch学习"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -62,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#tensor学习",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,20 +186,26 @@
   },
   "active": "f27a459dd94ff3e6",
   "lastOpenFiles": [
-    "mylearning_note/相关基础工具.md",
-    "jupyter/relative_skills_learing/learning_matplotlib_and_seaborn.ipynb",
-    "jupyter/relative_skills_learing/Untitled.ipynb",
-    "jupyter/relative_skills_learing/learning_numpy.ipynb",
-    "jupyter/relative_skills_learing/learning_.ipynb",
-    "MachineLearning_Ng/note笔记/2吴恩达Meachine-Learing之单变量线性回归(Linear-Regression-with-One-Variable).md",
+    "未命名.canvas",
+    "mylearning_note/pytorch学习.md",
+    "MachineLearning_Ng/机器学习个人笔记完整版v4.3.pdf",
+    "mylearning_note/tensor学习.md",
+    "jupyter/torch_learning/tensor.ipynb",
+    "jupyter/torch_learning/Untitled.ipynb",
+    "jupyter/torch_learning",
+    "jupyter/新建文件夹",
+    "mylearning_note/逻辑梯度回归.md",
     "mylearning_note/机器学习.md",
-    "mylearning_note/单变量线性梯度回归.md",
-    "jupyter/relative_skills_learing/ex1data1.txt",
-    "jupyter/relative_skills_learing/learning_pandas.ipynb",
-    "jupyter/1.linear_regreesion_v1.ipynb",
-    "jupyter",
-    "新建文件夹",
-    "1.linear_regreesion_v1.ipynb",
+    "MachineLearning_Ng/note笔记/3吴恩达Meachine-Learing之线性代数回顾-(Linear-Algebra-Review).md",
+    "jupyter/ex2-logistic_regression/easy_version.ipynb",
+    "jupyter/ex2-logistic_regression/Untitled.ipynb",
+    "mylearning_note/梯度回归.md",
+    "mylearning_note/相关基础工具.md",
+    "mylearning_note/线性梯度回归.md",
+    "jupyter/relative_skills_learing/ex2data1.txt",
+    "jupyter/relative_skills_learing/ex2data2.txt",
+    "jupyter/ex2-logistic regression/ex2data2.txt",
+    "MachineLearning_Ng/note笔记/2吴恩达Meachine-Learing之单变量线性回归(Linear-Regression-with-One-Variable).md",
     "mylearning_note/tensorflow版本.md",
     "未命名.md",
     "mylearning_note/评估模型.md",
@@ -216,7 +214,6 @@
     "photo/屏幕截图 2026-03-22 202409.png",
     "photo/屏幕截图 2026-03-22 202553.png",
     "photo/Pasted image 20260322201842.png",
-    "MachineLearning_Ng/note笔记/1吴恩达Meachine-Learing之监督学习和非监督学习.md",
-    "MachineLearning_Ng/note笔记/3吴恩达Meachine-Learing之线性代数回顾-(Linear-Algebra-Review).md"
+    "MachineLearning_Ng/note笔记/1吴恩达Meachine-Learing之监督学习和非监督学习.md"
   ]
 }
