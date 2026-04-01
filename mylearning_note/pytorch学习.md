@@ -83,3 +83,46 @@
 - 数千个 ReLU 组合在一起，就能让模型画出极其复杂的、弯弯曲曲的边界，从而把各种奇形怪状的衣服精准地切分出来
 虽然 Softmax 提供了概率映射，但其本身不具备特征提取能力。**ReLU 的核心意义在于引入非线性映射**，使得多层全连接网络能够拟合复杂的函数边界。没有 ReLU，深层网络将退化为单层线性分类器，无法处理 FashionMNIST 这种高维图像数据。
 [相关代码](vscode://file/C:\Users\YYY\Desktop\mashine_learning\jupyter\torch_learning\Buildmodel_tutorial.ipynb)
+
+# 第一个模型的训练
+[优化模型参数 — PyTorch 教程 2.11.0+cu130 文档](https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html)
+深度学习核心：PyTorch 训练与持久化笔记
+## 1. 训练主循环 (The Training Loop)
+
+深度学习的训练不是“赋值”，而是**“基于指针的原地修改”**。
+
+### 🔄 核心三部曲
+
+Python
+
+```
+pred = model(X)      # 1. 前向传播：模型看题预测
+loss = loss_fn(pred, y) # 2. 计算损失：裁判打分 (CrossEntropy)
+loss.backward()      # 3. 反向传播：产生梯度 (填充参数的 .grad 存钱罐)
+
+optimizer.step()     # 4. 执行更新：搬运工根据梯度，原地修改模型内的 W 和 b
+optimizer.zero_grad()# 5. 清理现场：擦掉梯度，防止累加到下一个 Batch
+```
+```
+### 关键细节 (Refined Insights
+- **`model.train()` vs `model.eval()`**：
+    - `train()` 开启 **Dropout**（随机丢弃）防止死记硬背。
+    - `eval()` 关闭干扰，进入稳定预测模式。
+- **`enumerate(dataloader)`**：    
+    - 返回 `(batch_index, (data, label))`。
+    - **C++ 类比**：带 `i++` 计数器的迭代器包装。
+- **`loss.item()`**：
+    - 将单元素 Tensor 转为 Python `float`。
+    - **避坑**：不加 `.item()` 会导致计算图残留在显存，引发 **OOM (显存溢出)**。
+## 2. 优化器 (The Optimizer)
+`Optimizer` 是模型参数的“外部管家”
+- **存储位置**：参数 W 和 b 物理上储存在 `model` 的内存里。
+- **绑定机制**：`SGD(model.parameters())` 让优化器持有了模型参数的**指针列表**。
+- **原地更新 (In-place)**：`optimizer.step()` 直接修改指针指向的数值，因此在主循环里看不到 `W = new_W` 的显式赋值，但 `loss` 会因参数变动而下降。
+```
+  [相关代码](vscode://file/C:\Users\YYY\Desktop\mashine_learning\jupyter\torch_learning\model_train.ipynb)
+
+
+# 下载学习
+[保存并加载模型 — PyTorch 教程 2.11.0+cu130 文档](https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html)
+
