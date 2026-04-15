@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mylearning_note/pytorch学习.md",
+                "file": "mylearning_note/线性梯度回归.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pytorch学习"
+              "title": "线性梯度回归"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tensor学习",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,24 +185,23 @@
   },
   "active": "f27a459dd94ff3e6",
   "lastOpenFiles": [
+    "mylearning_note/pytorch学习.md",
+    "jupyter/LiHongyi_teacher/Hw01/nn_model.ipynb",
+    "jupyter/LiHongyi_teacher/Hw01/Untitled.ipynb",
+    "jupyter/LiHongyi_teacher/Hw01/dataset.ipynb",
+    "jupyter/LiHongyi_teacher/Hw01/prediction_2022_02_26.csv",
+    "mylearning_note/梯度回归.md",
+    "mylearning_note/逻辑梯度回归.md",
     "jupyter/torch_learning/data/FashionMNIST/raw/t10k-labels-idx1-ubyte",
     "jupyter/torch_learning/data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz",
     "jupyter/torch_learning/data/FashionMNIST/raw/t10k-images-idx3-ubyte",
     "jupyter/torch_learning/data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz",
     "jupyter/torch_learning/data/FashionMNIST/raw/train-labels-idx1-ubyte",
     "jupyter/torch_learning/data/FashionMNIST/raw/train-labels-idx1-ubyte.gz",
-    "jupyter/torch_learning/data/FashionMNIST/raw/train-images-idx3-ubyte",
-    "jupyter/torch_learning/data/FashionMNIST/raw/train-images-idx3-ubyte.gz",
-    "jupyter/torch_learning/data/FashionMNIST/raw",
-    "jupyter/torch_learning/data/FashionMNIST",
-    "jupyter/torch_learning/data",
-    "mylearning_note/pytorch学习.md",
     "未命名.canvas",
     "mylearning_note/tensor学习.md",
-    "mylearning_note/逻辑梯度回归.md",
     "mylearning_note/机器学习.md",
     "MachineLearning_Ng/note笔记/3吴恩达Meachine-Learing之线性代数回顾-(Linear-Algebra-Review).md",
-    "mylearning_note/梯度回归.md",
     "mylearning_note/相关基础工具.md",
     "mylearning_note/线性梯度回归.md",
     "MachineLearning_Ng/note笔记/2吴恩达Meachine-Learing之单变量线性回归(Linear-Regression-with-One-Variable).md",
